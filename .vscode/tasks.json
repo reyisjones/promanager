@@ -1,0 +1,20 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Start ProManager Development",
+			"type": "shell",
+			"command": "pnpm",
+			"args": [
+				"tauri",
+				"dev"
+			],
+			"group": "build",
+			"isBackground": true,
+			"problemMatcher": [],
+			"options": {
+				"cwd": "${workspaceFolder}/promanagerapp"
+			}
+		}
+	]
+}
