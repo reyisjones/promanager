@@ -2,6 +2,14 @@
 
 A comprehensive project management desktop application built with Tauri (Rust backend) and React (TypeScript frontend).
 
+## 🎥 Live Demo
+
+![ProManager Demo](./assets/ProManagerDemo.gif)
+
+*Complete overview of ProManager's key features: project creation, task management, status tracking, and dashboard insights.*
+
+> **📹 Demo GIFs**: See [RECORDING_GUIDE.md](./RECORDING_GUIDE.md) for instructions on how to record and create the demo GIFs shown below.
+
 ## 🚀 Features
 
 ### Core Functionality
@@ -11,6 +19,35 @@ A comprehensive project management desktop application built with Tauri (Rust ba
 - **Due Date Management**: Set and track due dates with overdue indicators
 - **Dashboard Overview**: Get insights with task statistics and today's tasks
 - **Offline First**: All data stored locally using SQLite database
+
+## 🎥 Features Demo
+
+*Detailed feature-specific demonstrations:*
+
+### Dashboard Overview
+> Main dashboard with statistics, today's tasks, and quick navigation
+
+![Dashboard Overview](./assets/dashboard-overview.gif)
+
+### Project Management
+> Create and organize projects with custom colors and descriptions
+
+![Project Management](./assets/project-management.gif)
+
+### Task Management
+> Complete task creation workflow with priorities and due dates
+
+![Task Management](./assets/task-management.gif)
+
+### Task Organization
+> Filter and organize tasks by status, priority, and project
+
+![Task Filtering](./assets/task-filtering.gif)
+
+### Complete Workflow
+> End-to-end workflow from project creation to task completion
+
+![Complete Workflow](./assets/complete-workflow.gif)
 
 ### Technical Features
 - **Modern UI**: Clean and responsive design with Tailwind CSS
@@ -199,6 +236,35 @@ pnpm build-storybook  # Build Storybook for deployment
 - 🔲 Time tracking
 - 🔲 Reporting and analytics
 - 🔲 Plugin system
+
+## 🎬 Creating Demo GIFs
+
+To create or update the demo GIFs shown in this README:
+
+1. **Install recording tools**:
+   ```bash
+   brew install --cask licecap    # Simple GIF recorder
+   brew install ffmpeg            # For video conversion
+   ```
+
+2. **Start the development server**:
+   ```bash
+   cd promanagerapp
+   pnpm tauri dev
+   ```
+
+3. **Follow the recording guide**: See [RECORDING_GUIDE.md](./RECORDING_GUIDE.md) for detailed instructions on:
+   - 5 specific demo scenarios to record
+   - Recording best practices
+   - Technical specifications
+   - File optimization tips
+
+4. **Use the conversion script**:
+   ```bash
+   ./scripts/create-gif.sh your-recording.mov demo-name
+   ```
+
+All demo GIFs should be placed in the `assets/` directory and optimized for web viewing (< 3MB each).
 
 ## 🤝 Contributing
 
